@@ -200,6 +200,7 @@
                 opacity: 0;
                 transform: translate(-50%, -30px);
             }
+
             to {
                 opacity: 1;
                 transform: translate(-50%, 0);
@@ -211,9 +212,9 @@
             opacity: 0;
             transform: translateY(60px) scale(0.95);
             filter: blur(10px);
-            transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), 
-                        transform 1.2s cubic-bezier(0.16, 1, 0.3, 1),
-                        filter 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+            transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+                filter 1.2s cubic-bezier(0.16, 1, 0.3, 1);
             will-change: opacity, transform, filter;
         }
 
@@ -337,15 +338,15 @@
             aspect-ratio: 4/5;
             border-radius: 32px;
             padding: 12px;
-            background: rgba(255,255,255,0.03);
+            background: rgba(255, 255, 255, 0.03);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 30px 60px rgba(0,0,0,0.6), inset 0 0 20px rgba(255,255,255,0.05);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), inset 0 0 20px rgba(255, 255, 255, 0.05);
             transition: border-color 0.4s ease, box-shadow 0.4s ease;
         }
 
         .hero-visual:hover {
-            border-color: rgba(255,255,255,0.3);
-            box-shadow: var(--glow), inset 0 0 20px rgba(255,255,255,0.1);
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: var(--glow), inset 0 0 20px rgba(255, 255, 255, 0.1);
         }
 
         .hero-image-wrapper {
@@ -627,7 +628,8 @@
             </div>
             <div class="hero-visual scroll-reveal stagger-2">
                 <div class="hero-image-wrapper">
-                    <img src="c:\Users\ASUS\Downloads\profile.png" alt="Aswin" id="hero-image" onerror="this.style.display='none'" style="transform:scale(1.15); transform-origin: center;">
+                    <img src="public/profile.png" alt="Aswin" id="hero-image" onerror="this.style.display='none'"
+                        style="transform:scale(1.15); transform-origin: center;">
                 </div>
             </div>
         </div>
@@ -692,7 +694,7 @@
             <div class="about-grid">
                 <div class="hero-visual scroll-reveal stagger-1">
                     <div class="hero-image-wrapper">
-                        <img src="c:\Users\ASUS\Downloads\profile.png" alt="About Aswin" onerror="this.style.display='none'">
+                        <img src="public/profile.png" alt="About Aswin" onerror="this.style.display='none'">
                     </div>
                 </div>
                 <div class="about-text scroll-reveal stagger-2">
@@ -725,22 +727,35 @@
             </div>
             <div class="edu-layout" style="grid-template-columns: 1fr;">
                 <div class="glass-card edu-card scroll-reveal stagger-1">
-                    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 24px;">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 24px;">
                         <div>
                             <span class="edu-tag">2022 – 2027</span>
                             <h3 style="font-size: 2.2rem; margin-top: 8px; margin-bottom: 4px;">Integrated MCA</h3>
-                            <a href="https://depaul.edu.in/#gsc.tab=0" target="_blank" style="color:var(--text-main); text-decoration: none; font-size: 1.1rem; display: inline-flex; align-items: center; gap: 8px; transition: color 0.3s ease;">
+                            <a href="https://depaul.edu.in/#gsc.tab=0" target="_blank"
+                                style="color:var(--text-main); text-decoration: none; font-size: 1.1rem; display: inline-flex; align-items: center; gap: 8px; transition: color 0.3s ease;">
                                 De Paul Institute of Science & Technology (DiST)
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"></polyline>
+                                </svg>
                             </a>
                         </div>
-                        <div style="background: rgba(255,255,255,0.05); padding: 12px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.1);">
-                            <img src="https://depaul.edu.in/assets/images/logo.png" alt="DiST Logo" style="height: 48px; filter: brightness(0) invert(1);" onerror="this.style.display='none'">
+                        <div
+                            style="background: rgba(255,255,255,0.05); padding: 12px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.1);">
+                            <img src="https://depaul.edu.in/assets/images/logo.png" alt="DiST Logo"
+                                style="height: 48px; filter: brightness(0) invert(1);"
+                                onerror="this.style.display='none'">
                         </div>
                     </div>
-                    
+
                     <p style="color:var(--text-muted); line-height: 1.8; font-size: 1.05rem; margin-bottom: 24px;">
-                        Pursuing a 5-year Integrated Master of Computer Applications (MCA) programme at the School of Computer Science. DiST is a premier institution in Kerala with a lush green campus and international tie-ups, focused on harvesting the benefits of the IT revolution. The curriculum builds a strong foundation in software engineering, advanced programming, and modern tech stacks.
+                        Pursuing a 5-year Integrated Master of Computer Applications (MCA) programme at the School of
+                        Computer Science. DiST is a premier institution in Kerala with a lush green campus and
+                        international tie-ups, focused on harvesting the benefits of the IT revolution. The curriculum
+                        builds a strong foundation in software engineering, advanced programming, and modern tech
+                        stacks.
                     </p>
                     <div class="pill-group">
                         <span class="pill">Data Structures</span>
@@ -875,8 +890,8 @@
         /* LENIS SMOOTH SCROLL */
         const lenis = new Lenis();
         function raf(time) {
-          lenis.raf(time);
-          requestAnimationFrame(raf);
+            lenis.raf(time);
+            requestAnimationFrame(raf);
         }
         requestAnimationFrame(raf);
 
